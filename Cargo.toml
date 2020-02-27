@@ -1,0 +1,16 @@
+[package]
+name = "scrape-api"
+version = "0.1.0"
+authors = ["Max Gonzih <gonzih@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+warp = "0.2.1"
+serde_json = "1.0.48"
+serde = "1.0.104"
+serde_derive = "1.0.104"
+tokio = { version = "0.2", features = ["full"] }
+crabquery = "0.1.4"
+reqwest = { version = "0.10", features = [] }
