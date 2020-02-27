@@ -37,9 +37,11 @@ impl Scraper {
     pub async fn elements(&self) -> Result<Vec<ElementData>> {
         let mut result = vec![];
 
-        for url in &self.urls {
-            let response = reqwest::get(url).await?;
-            let document = Document::from(response.text().await?);
+        let handles: Vec<_> = self.urls.iter().map(|url| (url, reqwest::get(url))).collect();
+
+        for response in handles {
+            let (url, response) = response;
+            let document = Document::from(response.await?.text().await?);
 
             for selector in &self.selectors {
                 let els = document.select(selector);
