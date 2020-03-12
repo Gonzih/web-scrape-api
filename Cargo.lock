@@ -149,9 +149,9 @@ checksum = "e7ca8a5221364ef15ce201e8ed2f609fc312682a8f4e0e3d4aa5879764e0fa3b"
 
 [[package]]
 name = "crabquery"
-version = "0.1.4"
+version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b8bd5d4c38292ecb392c9087e667e54fd952db1f0ae830fc90836f4c0e111df6"
+checksum = "804c33d2eb1f3b98ca63cb72f3ddcd6fc4198ecb72996999e3c63f17db52d910"
 dependencies = [
  "html5ever",
  "markup5ever",
