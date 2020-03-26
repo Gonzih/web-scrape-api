@@ -10,7 +10,7 @@ edition = "2018"
 warp = "0.2.1"
 serde_json = "1.0.48"
 serde = "1.0.105"
-serde_derive = "1.0.104"
+serde_derive = "1.0.105"
 tokio = { version = "0.2", features = ["full"] }
 crabquery = "0.1.6"
 reqwest = { version = "0.10", features = [] }
